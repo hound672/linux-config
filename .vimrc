@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ycm-core/YouCompleteMe'
 Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
 
 call plug#end()
 
