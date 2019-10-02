@@ -12,6 +12,7 @@ colorscheme monokai
 set number
 set hlsearch
 set incsearch
+set clipboard=unnamed
 
 "mappings
 
