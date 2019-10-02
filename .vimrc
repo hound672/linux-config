@@ -1,13 +1,14 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'ycm-core/YouCompleteMe'
 " color schemas
 Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-syntax on
-colorscheme gruvbox
+syntax enable 
+colorscheme monokai
 set background=dark
 set number
 set hlsearch
