@@ -16,5 +16,7 @@ set clipboard=unnamed
 
 "mappings
 
-map <C-v> :NERDTreeToggle<CR>
+map <C-t> :NERDTreeToggle<CR>
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
 
