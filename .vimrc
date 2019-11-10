@@ -21,4 +21,6 @@ set tabstop=4
 map <C-t> :NERDTreeToggle<CR>
 nnoremap <C-y> "+y
 vnoremap <C-y> "+y
+nnoremap <C-d> "+d
+vnoremap <C-d> "+d
 
