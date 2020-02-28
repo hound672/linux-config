@@ -27,3 +27,7 @@ vnoremap <C-d> "+d
 " format JSON command
 com! FormatJSON %!python -m json.tool
 
+" format for hex
+com! FormatToHEX %!xxd
+com! FormatFromHEX %!xxd -r
+
