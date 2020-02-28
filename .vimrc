@@ -15,6 +15,7 @@ set incsearch
 set clipboard=unnamed
 set expandtab
 set tabstop=4
+set laststatus=2
 
 "mappings
 
@@ -33,3 +34,4 @@ com! FormatFromHEX %!xxd -r
 
 " save as sudo
 com! SudoSave w !sudo tee %
+
