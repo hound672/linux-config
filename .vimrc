@@ -31,3 +31,5 @@ com! FormatJSON %!python -m json.tool
 com! FormatToHEX %!xxd
 com! FormatFromHEX %!xxd -r
 
+" save as sudo
+com! SudoSave w !sudo tee %
