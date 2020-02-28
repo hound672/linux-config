@@ -24,3 +24,6 @@ vnoremap <C-y> "+y
 nnoremap <C-d> "+d
 vnoremap <C-d> "+d
 
+" format JSON command
+com! FormatJSON %!python -m json.tool
+
