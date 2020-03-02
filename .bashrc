@@ -126,6 +126,7 @@ alias HttpPy='f(){ python -m HttpPy -i "$@" -v;  unset -f f; }; f'
 
 # aliases for git commands
 alias g_c='f(){ git add .; git commit -m "$@";  unset -f f; }; f'
+alias g_l='f(){ git log -n"$@";  unset -f f; }; f'
 alias g_am='git commit --amend'
 alias g_ad='git add .'
 alias g_ph='git push'
