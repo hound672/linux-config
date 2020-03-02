@@ -12,7 +12,6 @@ colorscheme monokai
 set number
 set hlsearch
 set incsearch
-set clipboard=unnamed
 set expandtab
 set tabstop=4
 set laststatus=2
