@@ -16,6 +16,8 @@ set expandtab
 set tabstop=4
 set laststatus=2
 
+autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
+
 "mappings
 
 map <C-t> :NERDTreeToggle<CR>
