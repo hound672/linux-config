@@ -133,3 +133,6 @@ alias g_ph='git push'
 alias g_pl='git pull'
 alias g_s='git status'
 
+# aliases for docker
+alias docker_stop_all="docker ps -a -q | xargs docker stop"
+alias docker_rm_all="docker ps -a -q | xargs docker rm"
