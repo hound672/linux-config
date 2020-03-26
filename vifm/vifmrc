@@ -136,7 +136,9 @@ mark h ~/
 
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
-command! zip zip -r %f.zip %f
+command! zip if [ -n "%a" ]; then
+           \     zip -r '%a.zip' %f;
+           \ fi
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
