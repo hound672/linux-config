@@ -139,3 +139,4 @@ alias docker_rm_all="docker ps -a -q | xargs docker rm"
 
 # aliases for copy current path to system clipboard
 alias pwd_copy='pwd | xclip -i -selection clipboard'
+alias buf_copy='xclip -i -selection clipboard'
