@@ -111,7 +111,7 @@ endif
 
 " Set custom status line look
 
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d %E"
 
 " ------------------------------------------------------------------------------
 
@@ -247,7 +247,9 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
         \ {View in shotwell}
         \ shotwell,
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-         \ gwenview %f
+        \ imgt %px %py %pw %ph %c
+        \ %pc
+        \ imgc %px %py %pw %ph
 
 " OpenRaster
 filextype *.ora
