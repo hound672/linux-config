@@ -1,0 +1,5 @@
+# ignore for all repositories
+
+# dir with HttpPy settings
+HttpPy/
+
