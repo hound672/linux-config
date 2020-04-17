@@ -125,18 +125,27 @@ fi
 alias HttpPy='f(){ python -m HttpPy -i "$@" -v;  unset -f f; }; f'
 
 # aliases for git commands
-alias g_c='f(){ git add .; git commit -m "$@";  unset -f f; }; f'
-alias g_l='f(){ git log -n"$@";  unset -f f; }; f'
-alias g_am='git commit --amend'
-alias g_ad='git add .'
-alias g_ph='git push'
-alias g_pl='git pull'
-alias g_s='git status'
+alias gc='f(){ git add .; git commit -m "$@";  unset -f f; }; f'
+alias gl='f(){ git log -n"$@";  unset -f f; }; f'
+alias gam='git commit --amend'
+alias gad='git add .'
+alias gph='git push'
+alias gpl='git pull'
+alias gs='git status'
 
 # aliases for docker
 alias docker_stop_all="docker ps -a -q | xargs docker stop"
 alias docker_rm_all="docker ps -a -q | xargs docker rm"
 
 # aliases for copy current path to system clipboard
+# copy cuurent path to buffer
 alias pwd_copy='pwd | xclip -i -selection clipboard'
+# copy stdout to buffer
 alias buf_copy='xclip -i -selection clipboard'
+
+# other aliases
+alias rm='rm -i'
+alias mv='mv -i'
+alias ..='cd ..'
+
+[[ -s "/home/hound/.gvm/scripts/gvm" ]] && source "/home/hound/.gvm/scripts/gvm"
