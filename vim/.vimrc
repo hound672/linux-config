@@ -26,6 +26,7 @@ vnoremap <C-y> "+y
 nnoremap <C-d> "+d
 vnoremap <C-d> "+d
 
+com! To tabonly
 " format JSON command
 com! FormatJSON %!python -m json.tool
 
