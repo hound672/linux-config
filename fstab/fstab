@@ -1,0 +1,2 @@
+# tmp to ram
+tmpfs /tmp tmpfs defaults,size=2G,mode=1777     0       0
