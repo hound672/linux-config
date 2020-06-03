@@ -150,6 +150,6 @@ alias ..='cd ..'
 
 # accept .env
 #alias env_accept='export $(xargs <.env)'
-alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo "Error"; fi'
+alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
 
 [[ -s "/home/hound/.gvm/scripts/gvm" ]] && source "/home/hound/.gvm/scripts/gvm"
