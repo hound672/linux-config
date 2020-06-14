@@ -88,7 +88,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -147,5 +147,9 @@ alias buf_copy='xclip -i -selection clipboard'
 alias rm='rm -i'
 alias mv='mv -i'
 alias ..='cd ..'
+
+# accept .env
+#alias env_accept='export $(xargs <.env)'
+alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
 
 [[ -s "/home/hound/.gvm/scripts/gvm" ]] && source "/home/hound/.gvm/scripts/gvm"
