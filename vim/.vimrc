@@ -17,6 +17,7 @@ set tabstop=4
 set laststatus=2
 
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 expandtab
 
 "mappings
 
@@ -33,6 +34,7 @@ com! FormatJSON %!python -m json.tool
 " format for hex
 com! FormatToHEX %!xxd
 com! FormatFromHEX %!xxd -r
+com! FoldJSON set filetype=json | syntax on | set foldmethod=syntax
 
 " save as sudo
 com! SudoSave w !sudo tee %
