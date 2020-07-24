@@ -136,6 +136,7 @@ alias gs='git status'
 # aliases for docker
 alias docker_stop_all="docker ps -a -q | xargs docker stop"
 alias docker_rm_all="docker ps -a -q | xargs docker rm"
+alias docker_rmi_empty='docker images -f "dangling=true" -q | xargs docker rmi'
 
 # aliases for copy current path to system clipboard
 # copy cuurent path to buffer
