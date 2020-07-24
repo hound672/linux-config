@@ -142,6 +142,8 @@ alias docker_rm_all="docker ps -a -q | xargs docker rm"
 alias pwd_copy='pwd | xclip -i -selection clipboard'
 # copy stdout to buffer
 alias buf_copy='xclip -i -selection clipboard'
+# copy to clipboard
+alias to_clip='xclip -i -selection clipboard'
 
 # other aliases
 alias rm='rm -i'
