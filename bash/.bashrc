@@ -130,7 +130,7 @@ alias gl='f(){ git log -n"$@";  unset -f f; }; f'
 alias gam='git commit --amend'
 alias gad='git add .'
 alias gph='git push'
-alias gpl='git pull'
+alias gpl='git pull --rebase'
 alias gs='git status'
 
 # aliases for docker
@@ -150,6 +150,7 @@ alias to_clip='xclip -i -selection clipboard'
 alias rm='rm -i'
 alias mv='mv -i'
 alias ..='cd ..'
+alias cd_strg='cd /mnt/storage'
 
 # accept .env
 #alias env_accept='export $(xargs <.env)'
