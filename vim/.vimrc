@@ -15,6 +15,7 @@ set incsearch
 set expandtab
 set tabstop=4
 set laststatus=2
+set encoding=utf-8
 
 autocmd FileType yaml setlocal shiftwidth=2 softtabstop=2 expandtab
 autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 expandtab
@@ -27,7 +28,7 @@ vnoremap <C-y> "+y
 nnoremap <C-d> "+d
 vnoremap <C-d> "+d
 
-com! To tabonly
+com! TO tabonly
 " format JSON command
 com! FormatJSON %!python -m json.tool
 
