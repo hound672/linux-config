@@ -119,6 +119,7 @@ set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d %E"
 
 mark b ~/bin/
 mark h ~/
+mark s /mnt/storage
 
 " ------------------------------------------------------------------------------
 
@@ -427,6 +428,7 @@ nnoremap gb :file &<cr>l
 " Interaction with system clipboard
 nnoremap yd :!echo -n %d | xclip %i -sel clip<cr>:echo expand('%"d') "is yanked to clipboard"<cr>
 nnoremap yf :!echo -n %c:p | xclip %i -sel clip<cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
+nnoremap yp :!echo -n %c | xclip %i -sel clip<cr>:echo expand('%"c') "is yanked to clipboard"<cr>
 
 " Mappings for faster renaming
 nnoremap I cw<c-a>
