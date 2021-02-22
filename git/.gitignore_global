@@ -1,5 +1,16 @@
 # ignore for all repositories
+.idea/
+ .creds
 
 # dir with HttpPy settings
 HttpPy/
 
+# pyenv python version
+.python-version
+
+# tar files
+*.tar.gz
+
+development-vbliznetsov.yml
+dev_dep/
+nginx-vbliznetsov.conf
