@@ -1,7 +1,6 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'ycm-core/YouCompleteMe'
 Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
 
@@ -30,7 +29,7 @@ vnoremap <C-d> "+d
 
 com! TO tabonly
 " format JSON command
-com! FormatJSON %!python -m json.tool
+com! FormatJSON %!python -m json.tool --no-ensure-ascii  
 
 " format for hex
 com! FormatToHEX %!xxd
