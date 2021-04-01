@@ -127,7 +127,7 @@ alias HttpPy='f(){ python -m HttpPy -i "$@" -v;  unset -f f; }; f'
 # aliases for git commands
 alias gc='f(){ git add .; git commit -m "$@";  unset -f f; }; f'
 alias gcs='f(){ git add .; git commit -S -m "$@";  unset -f f; }; f'
-alias gl='f(){ git log -n"$@";  unset -f f; }; f'
+alias gl='f(){ git log --show-signature -n"$@";  unset -f f; }; f'
 alias gam='git commit --amend'
 alias gad='git add .'
 alias gph='git push'
@@ -152,6 +152,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias ..='cd ..'
 alias cd_strg='cd /mnt/storage'
+alias ssh_agent='eval $(ssh-agent -s)'
 
 # accept .env
 #alias env_accept='export $(xargs <.env)'
