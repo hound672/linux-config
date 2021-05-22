@@ -159,3 +159,6 @@ alias ssh_agent='eval $(ssh-agent -s)'
 alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
 
 [[ -s "/home/hound/.gvm/scripts/gvm" ]] && source "/home/hound/.gvm/scripts/gvm"
+
+exec zsh
+
