@@ -22,6 +22,18 @@ if command -v pyenv 1>/dev/null 2>&1; then
             eval "$(pyenv init -)"
 fi
 
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
 [[ -s "/home/hound/.gvm/scripts/gvm" ]] && source "/home/hound/.gvm/scripts/gvm"
 
 zstyle ':completion:*' menu yes select
@@ -54,6 +66,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias ..='cd ..'
 alias cd_strg='cd /mnt/storage'
+alias cd_ssd='cd /mnt/ssd_storage'
 alias ssh_agent='eval $(ssh-agent -s)'
 
 # some more ls aliases
