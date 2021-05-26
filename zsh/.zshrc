@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -176,3 +176,22 @@ alias ssh_agent='eval $(ssh-agent -s)'
 alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
+
+hash -d ssd_storage=/mnt/ssd_storage
+hash -d storage=/mnt/storage
+
+#bindkey "^[[5~" history-beginning-search-backward # pg up
+#bindkey "^[[6~" history-beginning-search-forward  # pg down
+
+pasteinit() {
+          OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+            zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+    }
+
+pastefinish() {
+          zle -N self-insert $OLD_SELF_INSERT
+  }
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic paste-finish pastefinish
+### Fix slowness of pastes
+
