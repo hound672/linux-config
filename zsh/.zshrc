@@ -141,6 +141,9 @@ fi
 #zstyle ':completion:*' menu yes select
 zstyle -e ':completion:*' hosts 'reply=($myhosts)'
 
+# env aliases
+alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
+
 # aliases for git commands
 alias gc='f(){ git add .; git commit -m "$@";  unset -f f; }; f'
 alias gcs='f(){ git add .; git commit -S -m "$@";  unset -f f; }; f'
@@ -171,6 +174,10 @@ alias ..='cd ..'
 alias cd_strg='cd /mnt/storage'
 alias cd_ssd='cd /mnt/ssd_storage'
 alias ssh_agent='eval $(ssh-agent -s)'
+alias ssh_list='ssh-add -l'
+
+# for gpg
+alias gpg_reset='export GPG_TTY=$(tty) && echo "test" | gpg --clearsign'
 
 # some more ls aliases
 alias ll='ls -alhF'
