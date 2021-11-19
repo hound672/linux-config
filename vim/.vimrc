@@ -22,8 +22,13 @@ autocmd FileType cpp setlocal shiftwidth=2 softtabstop=2 expandtab
 "mappings
 
 map <C-t> :NERDTreeToggle<CR>
-nnoremap <C-y> "+y
-vnoremap <C-y> "+y
+" xorg
+" nnoremap <C-y> "+y
+" vnoremap <C-y> "+y
+
+" wayland
+vnoremap <C-Y> :call system("wl-copy --trim-newline", @*)<cr>:call system("wl-copy -p --trim-newline", @*)<cr>
+
 nnoremap <C-d> "+d
 vnoremap <C-d> "+d
 

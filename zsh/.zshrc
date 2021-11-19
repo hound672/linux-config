@@ -70,7 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git history-substring-search)
+plugins=(git history-substring-search docker docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -161,7 +161,8 @@ alias docker_rmi_empty='docker images -f "dangling=true" -q | xargs docker rmi'
 
 # # aliases for copy current path to system clipboard
 # copy cuurent path to buffer
-alias pwd_copy='pwd | xclip -i -selection clipboard'
+#alias pwd_copy='pwd | xclip -i -selection clipboard'
+alias pwd_copy='pwd | wl-copy'
 # copy stdout to buffer
 alias buf_copy='xclip -i -selection clipboard'
 # copy to clipboard
