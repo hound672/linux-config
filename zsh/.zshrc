@@ -189,9 +189,6 @@ alias l='ls -CF'
 hash -d ssd_storage=/mnt/ssd_storage
 hash -d storage=/mnt/storage
 
-#bindkey "^[[5~" history-beginning-search-backward # pg up
-#bindkey "^[[6~" history-beginning-search-forward  # pg down
-
 pasteinit() {
           OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
             zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
@@ -203,4 +200,7 @@ pastefinish() {
 zstyle :bracketed-paste-magic paste-init pasteinit
 zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
+
+bindkey \^U backward-kill-line
+bindkey \^H kill-whole-line
 
