@@ -170,11 +170,6 @@ alias buf_copy='xclip -i -selection clipboard'
 alias to_clip='xclip -i -selection clipboard'
 
 # # other aliases
-alias rm='rm -i'
-alias mv='mv -i'
-alias ..='cd ..'
-alias cd_strg='cd /mnt/storage'
-alias cd_ssd='cd /mnt/ssd_storage'
 alias ssh_agent='eval $(ssh-agent -s)'
 alias ssh_list='ssh-add -l'
 
