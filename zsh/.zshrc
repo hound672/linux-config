@@ -181,6 +181,8 @@ alias ll='ls -alhF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias ag="ag --hidden"
+
 hash -d ssd_storage=/mnt/ssd_storage
 hash -d storage=/mnt/storage
 
