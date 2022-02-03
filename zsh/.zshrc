@@ -201,3 +201,5 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 bindkey \^U backward-kill-line
 bindkey \^H kill-whole-line
 
+source ~/.env
+
