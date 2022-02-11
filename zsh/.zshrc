@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/hound/.oh-my-zsh"
+export ZSH="/home/vbliznetsov/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -137,7 +137,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-[[ -s "/home/hound/.gvm/scripts/gvm" ]] && source "/home/hound/.gvm/scripts/gvm"
+[[ -s "/home/vbliznetsov/.gvm/scripts/gvm" ]] && source "/home/vbliznetsov/.gvm/scripts/gvm"
 
 #zstyle ':completion:*' menu yes select
 zstyle -e ':completion:*' hosts 'reply=($myhosts)'
