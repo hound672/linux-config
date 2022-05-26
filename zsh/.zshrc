@@ -78,7 +78,13 @@ source $ZSH/oh-my-zsh.sh
 # link own private aliases
 PRIVATE_ALIASES_FILE=~/.aliases
 if [[ -f "$PRIVATE_ALIASES_FILE" ]]; then
-  source ~/.aliases
+  source $PRIVATE_ALIASES_FILE
+fi
+
+# link .env file
+ENV_FILE=~/.env
+if [[ -f "$ENV_FILE" ]]; then
+  source $ENV_FILE
 fi
 
 # User configuration
@@ -206,6 +212,4 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 bindkey \^U backward-kill-line
 bindkey \^H kill-whole-line
-
-source ~/.env
 
