@@ -75,6 +75,12 @@ plugins=(git history history-substring-search docker docker-compose sudo fzf com
 
 source $ZSH/oh-my-zsh.sh
 
+# link own private aliases
+PRIVATE_ALIASES_FILE=~/.aliases
+if [[ -f "$PRIVATE_ALIASES_FILE" ]]; then
+  source ~/.aliases
+fi
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
