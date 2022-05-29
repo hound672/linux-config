@@ -4,6 +4,9 @@
 #         Copyright 2012— Gregory Pakosz (@gpakosz).
 
 
+# -- general -------------------------------------------------------------------
+set -sg repeat-time 400
+
 # -- navigation ----------------------------------------------------------------
 
 # if you're running tmux within iTerm2
