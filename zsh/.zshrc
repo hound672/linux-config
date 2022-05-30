@@ -184,6 +184,7 @@ alias to_clip='xclip -i -selection clipboard'
 # # other aliases
 alias ssh_agent='eval $(ssh-agent -s)'
 alias ssh_list='ssh-add -l'
+alias line_dos_unix="sed $'s/\r$//'"
 
 # for gpg
 alias gpg_reset='export GPG_TTY=$(tty) && echo "test" | gpg --clearsign'
