@@ -196,6 +196,9 @@ alias l='ls -CF'
 
 alias ag="ag --hidden"
 
+# aliases for K8S
+alias kc='kubectl'
+
 hash -d ssd_storage=/mnt/ssd_storage
 hash -d storage=/mnt/storage
 
