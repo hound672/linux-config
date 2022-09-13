@@ -426,9 +426,15 @@ nnoremap O :!gvim %f<cr>
 nnoremap gb :file &<cr>l
 
 " Interaction with system clipboard
-nnoremap yd :!echo -n %d | xclip %i -sel clip<cr>:echo expand('%"d') "is yanked to clipboard"<cr>
-nnoremap yf :!echo -n %c:p | xclip %i -sel clip<cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
-nnoremap yp :!echo -n %c | xclip %i -sel clip<cr>:echo expand('%"c') "is yanked to clipboard"<cr>
+" X11
+" nnoremap yd :!echo -n %d | xclip %i -sel clip<cr>:echo expand('%"d') "is yanked to clipboard"<cr>
+" nnoremap yf :!echo -n %c:p | xclip %i -sel clip<cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
+" nnoremap yp :!echo -n %c | xclip %i -sel clip<cr>:echo expand('%"c') "is yanked to clipboard"<cr>
+
+" wayland
+nnoremap yd :!echo -n %d | wl-copy <cr>:echo expand('%"d') "is yanked to clipboard"<cr>
+nnoremap yf :!echo -n %c:p | wl-copy <cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
+nnoremap yp :!echo -n %c | wl-copy <cr>:echo expand('%"c') "is yanked to clipboard"<cr>
 
 " Mappings for faster renaming
 nnoremap I cw<c-a>
