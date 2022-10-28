@@ -166,6 +166,7 @@ alias gad='git add .'
 alias gph='git push'
 alias gpl='git pull --rebase'
 alias gs='git status'
+alias gphf='f(){ git push origin +"$@";  unset -f f; }; f'
 
 # # aliases for docker
 alias dsa="docker ps -a -q | xargs docker stop"
