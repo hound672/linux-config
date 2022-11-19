@@ -44,3 +44,10 @@ ln -sf tmux/.tmux.conf.local ~
 ln -sf zsh/.zshrc ~
 ```
 
+### gnpg
+
+## Create symlink
+
+```bash
+ln -sf gnupg/gpg-agent.conf ~/.gnupg
+```
