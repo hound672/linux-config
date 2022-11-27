@@ -19,6 +19,10 @@ cp -r vim/colors/* ~/.vim/colors
 
 ## Tmux
 
+### Requirements
+
+```xsel``` for copy to system clipboard
+
 ### Plugin installer
 
 https://github.com/tmux-plugins/tpm
