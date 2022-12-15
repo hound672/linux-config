@@ -1,5 +1,15 @@
 # Linux config
 
+## zsh
+
+### Custom pluginx
+
+zsh-z
+
+```bash
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
+```
+
 ## Vim
 
 ### Copy colors
@@ -48,7 +58,7 @@ ln -sf tmux/.tmux.conf.local ~
 ln -sf zsh/.zshrc ~
 ```
 
-### gnpg
+## gnpg
 
 ## Create symlink
 
