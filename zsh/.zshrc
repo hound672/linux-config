@@ -71,7 +71,17 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(git history history-substring-search docker docker-compose sudo fzf common-aliases zsh-z)
+plugins=(
+  git 
+  history 
+  history-substring-search 
+  docker 
+  docker-compose 
+  sudo 
+  fzf 
+  common-aliases 
+  zsh-z 
+)
 
 source $ZSH/oh-my-zsh.sh
 
