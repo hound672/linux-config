@@ -211,6 +211,9 @@ alias ag="ag --hidden"
 # aliases for K8S
 alias kc='kubectl'
 
+# aliases for golang
+alias go_env='f() {export GOPATH="$@";export PATH=$PATH:$GOPATH/bin;}; f'
+
 hash -d ssd_storage=/mnt/ssd_storage
 hash -d storage=/mnt/storage
 
