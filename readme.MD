@@ -1,5 +1,14 @@
 # Linux config
 
+## git
+
+For using ```.gitconfig.local``` in git global config add in git global config file:
+
+```
+[include]
+    path = ~/.gitconfig.local
+```
+
 ## zsh
 
 ### Custom pluginx
