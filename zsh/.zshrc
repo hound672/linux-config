@@ -73,6 +73,7 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
   git 
+  gitfast
   history 
   history-substring-search 
   docker 
