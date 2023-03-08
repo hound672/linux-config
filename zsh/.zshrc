@@ -169,12 +169,7 @@ zstyle -e ':completion:*' hosts 'reply=($myhosts)'
 alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
 
 # aliases for git commands
-alias gc='f(){ git commit -m "$@";  unset -f f; }; f'
-alias gcs='f(){ git commit -S -m "$@";  unset -f f; }; f'
 alias gl='f(){ git log --show-signature -n"$@";  unset -f f; }; f'
-alias gam='git commit --amend'
-alias gad='git add .'
-alias gph='git push'
 alias gpl='git pull --rebase'
 alias gs='git status'
 alias gphf='f(){ git push origin +"$@";  unset -f f; }; f'
