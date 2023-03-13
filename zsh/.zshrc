@@ -174,7 +174,8 @@ alias gpl='git pull --rebase'
 alias gs='git status'
 alias gphf='f(){ git push origin +"$@";  unset -f f; }; f'
 alias gba='g branch -a -vv'
-alias gdiff='g diff-tree -r --stat'
+alias gdiff='g diff-tree -r'
+alias gdiffs='g diff-tree -r --stat'
 
 # # aliases for docker
 alias dsa="docker ps -a -q | xargs docker stop"
