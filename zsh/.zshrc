@@ -176,6 +176,7 @@ alias gphf='f(){ git push origin +"$@";  unset -f f; }; f'
 alias gba='g branch -a -vv'
 alias gdiff='g diff-tree -r'
 alias gdiffs='g diff-tree -r --stat'
+alias glbtwn='f(){ glod --no-merges "$@";  unset -f f; }; f'
 
 # # aliases for docker
 alias dsa="docker ps -a -q | xargs docker stop"
