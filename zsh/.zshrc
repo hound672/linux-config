@@ -169,6 +169,7 @@ zstyle -e ':completion:*' hosts 'reply=($myhosts)'
 alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
 
 # aliases for git commands
+alias gfa='git fetch --all --prune --jobs=10 --prune-tags'
 alias gl='f(){ git log --show-signature -n"$@";  unset -f f; }; f'
 alias gpl='git pull --rebase'
 alias gs='git status'
