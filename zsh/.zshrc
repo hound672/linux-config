@@ -82,6 +82,8 @@ plugins=(
   fzf 
   common-aliases 
   zsh-z 
+  minikube
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
