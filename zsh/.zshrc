@@ -200,7 +200,7 @@ alias ssh_agent='eval $(ssh-agent -s)'
 alias ssh_list='ssh-add -l'
 alias line_dos_unix="sed $'s/\r$//'"
 alias tmp_dir='cd $(mktemp -d)'
-alias pam_info="pamac list  | fzf --preview '\''pamac info {}'\'' --layout=reverse --bind '\''enter:execute(pamac info {} | less'\'"
+alias pac_info="pacman -Qq | fzf --preview 'pacman -Qil {}'"
 
 # for gpg
 alias gpg_reset='export GPG_TTY=$(tty) && echo "test" | gpg --clearsign'
