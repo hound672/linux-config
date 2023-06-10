@@ -180,6 +180,7 @@ alias gba='g branch -a -vv'
 alias gdiff='g diff-tree -r'
 alias gdiffs='g diff-tree -r --stat'
 alias glbtwn='f(){ glod --no-merges "$@";  unset -f f; }; f'
+alias gbdgone="gba|grep gone | awk '{print $1}' | xargs git branch --delete -f"
 
 # # aliases for docker
 alias dsa="docker ps -a -q | xargs docker stop"
