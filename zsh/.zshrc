@@ -186,6 +186,7 @@ alias gbdgone="gba|grep gone | awk '{print $1}' | xargs git branch --delete -f"
 alias dsa="docker ps -a -q | xargs docker stop"
 alias dra="docker ps -a -q | xargs docker rm"
 alias docker_rmi_empty='docker images -f "dangling=true" -q | xargs docker rmi'
+alias dpsstopped='docker ps --filter "status=exited"'
 
 # # aliases for copy current path to system clipboard
 # copy cuurent path to buffer
