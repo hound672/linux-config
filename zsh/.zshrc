@@ -84,6 +84,7 @@ plugins=(
   zsh-z 
   minikube
   kubectl
+  poetry
 )
 
 source $ZSH/oh-my-zsh.sh
