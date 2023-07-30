@@ -51,4 +51,5 @@ com! FoldJSON set filetype=json | syntax on | set foldmethod=syntax
 " save as sudo
 com! SudoSave w !sudo tee %
 
-
+" toggle for enable/disable paste mode
+set pastetoggle=<F3>
