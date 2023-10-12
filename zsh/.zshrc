@@ -183,7 +183,7 @@ alias gdiffs='g diff-tree -r --stat'
 alias glbtwn='f(){ glod --no-merges "$@";  unset -f f; }; f'
 alias gbdgone="gba|grep gone | awk '{print $1}' | xargs git branch --delete -f"
 alias glodcmpdev="glod $(current_branch) $(git_develop_branch)"
-alias glodcmpmaster="glod $(current_branch) $(git_master_branch)"
+alias glodcmpmaster="glod $(current_branch) $(git_main_branch)"
 
 # # aliases for docker
 alias dsa="docker ps -a -q | xargs docker stop"
