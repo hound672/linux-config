@@ -207,6 +207,7 @@ alias line_dos_unix="sed $'s/\r$//'"
 alias tmp_dir='cd $(mktemp -d)'
 alias pac_info="pacman -Qq | fzf --preview 'pacman -Qi {}' --bind 'enter:execute:pacman -Qil {}|less'"
 alias plasma_restart="kquitapp5 plasmashell && kstart5 plasmashell </dev/null &>/dev/null &"
+alias init_dummy="sudo ip link add dummy0 type dummy && sudo ip addr add 192.168.100.100/24 dev dummy0 && sudo ip link set dummy0 up"
 
 # for gpg
 alias gpg_reset='export GPG_TTY=$(tty) && echo "test" | gpg --clearsign'
