@@ -56,21 +56,21 @@ In git repo dir:
 ```bash
 
 # vim
-ln -sf vim/.vimrc ~
+ln -sf $PWD/vim/.vimrc ~
 
 # tmux
-ln -sf tmux/.tmux.conf ~
-ln -sf tmux/.tmux.conf.local ~
+ln -sf $PWD/tmux/.tmux.conf ~
+ln -sf $PWD/tmux/.tmux.conf.local ~
 
 
 # zsh
-ln -sf zsh/.zshrc ~
+ln -sf $PWD/zsh/.zshrc ~
+ln -sf $PWD/zsh/.zshrc.local ~
+
+# gnpg
+ln -sf $PWD/gnupg/gpg-agent.conf ~/.gnupg
+
+# aliases
+ln -sf $PWD/aliases/.aliases ~
 ```
 
-## gnpg
-
-## Create symlink
-
-```bash
-ln -sf gnupg/gpg-agent.conf ~/.gnupg
-```

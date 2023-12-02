@@ -1,0 +1,12 @@
+# link own private aliases
+ALIASES_FILE=~/.aliases
+if [[ -f "$ALIASES_FILE" ]]; then
+  source $ALIASES_FILE
+fi
+
+# link .env file
+ENV_FILE=~/.env
+if [[ -f "$ENV_FILE" ]]; then
+  source $ENV_FILE
+fi
+

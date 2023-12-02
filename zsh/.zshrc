@@ -90,18 +90,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# link own private aliases
-PRIVATE_ALIASES_FILE=~/.aliases
-if [[ -f "$PRIVATE_ALIASES_FILE" ]]; then
-  source $PRIVATE_ALIASES_FILE
-fi
-
-# link .env file
-ENV_FILE=~/.env
-if [[ -f "$ENV_FILE" ]]; then
-  source $ENV_FILE
-fi
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -169,63 +157,6 @@ fi
 #zstyle ':completion:*' menu yes select
 zstyle -e ':completion:*' hosts 'reply=($myhosts)'
 
-# env aliases
-alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
-
-# aliases for git commands
-alias gfa='git fetch --all --prune --jobs=10 --prune-tags'
-alias gl='f(){ git log --show-signature -n"$@";  unset -f f; }; f'
-alias gpl='git pull --rebase'
-alias gs='git status'
-alias gphf='f(){ git push origin +"$@";  unset -f f; }; f'
-alias gba='g branch -a -vv'
-alias gdiff='g diff-tree -r'
-alias gdiffs='g diff-tree -r --stat'
-alias glbtwn='f(){ glod --no-merges "$@";  unset -f f; }; f'
-alias gbdgone="gba|grep gone | awk '{print $1}' | xargs git branch --delete -f"
-alias glodcmpdev="glod $(current_branch) $(git_develop_branch)"
-alias glodcmpmaster="glod $(current_branch) $(git_main_branch)"
-
-# # aliases for docker
-alias dsa="docker ps -a -q | xargs docker stop"
-alias dra="docker ps -a -q | xargs docker rm"
-alias docker_rmi_empty='docker images -f "dangling=true" -q | xargs docker rmi'
-alias dpsstopped='docker ps --filter "status=exited"'
-
-# # aliases for copy current path to system clipboard
-# copy cuurent path to buffer
-alias pwd_copy='pwd | tr -d "\n" | xclip -i -selection clipboard'
-#alias pwd_copy='pwd | wl-copy'
-# copy stdout to buffer
-alias buf_copy='xclip -i -selection clipboard'
-# copy to clipboard
-alias to_clip='xclip -i -selection clipboard'
-
-# # other aliases
-alias ssh_agent='eval $(ssh-agent -s)'
-alias ssh_list='ssh-add -l'
-alias line_dos_unix="sed $'s/\r$//'"
-alias tmp_dir='cd $(mktemp -d)'
-alias pac_info="pacman -Qq | fzf --preview 'pacman -Qi {}' --bind 'enter:execute:pacman -Qil {}|less'"
-alias plasma_restart="kquitapp5 plasmashell && kstart5 plasmashell </dev/null &>/dev/null &"
-alias init_dummy="sudo ip link add dummy0 type dummy && sudo ip addr add 192.168.100.100/24 dev dummy0 && sudo ip link set dummy0 up"
-
-# for gpg
-alias gpg_reset='export GPG_TTY=$(tty) && echo "test" | gpg --clearsign'
-
-# some more ls aliases
-alias ll='ls -alhF'
-alias la='ls -A'
-alias l='ls -CF'
-
-alias ag="ag --hidden"
-
-# aliases for K8S
-alias kc='kubectl'
-
-# aliases for golang
-alias go_env='f() {export GOPATH="$@";export PATH=$PATH:$GOPATH/bin;}; f'
-
 hash -d ssd_storage=/mnt/ssd_storage
 hash -d storage=/mnt/storage
 
@@ -243,4 +174,10 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 
 bindkey \^U backward-kill-line
 bindkey \^H kill-whole-line
+
+# link local config
+LOCAL_CONFIG_FILE=~/.zshrc.local
+if [[ -f "$LOCAL_CONFIG_FILE" ]]; then
+  source $LOCAL_CONFIG_FILE
+fi
 
