@@ -1,3 +1,7 @@
+# disks aliases
+hash -d ssd_storage=/mnt/ssd_storage
+hash -d storage=/mnt/storage
+
 # link own private aliases
 ALIASES_FILE=~/.aliases
 if [[ -f "$ALIASES_FILE" ]]; then

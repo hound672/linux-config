@@ -157,9 +157,6 @@ fi
 #zstyle ':completion:*' menu yes select
 zstyle -e ':completion:*' hosts 'reply=($myhosts)'
 
-hash -d ssd_storage=/mnt/ssd_storage
-hash -d storage=/mnt/storage
-
 pasteinit() {
           OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
             zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
