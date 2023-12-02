@@ -85,6 +85,7 @@ plugins=(
   minikube
   kubectl
   poetry
+  wd
 )
 
 source $ZSH/oh-my-zsh.sh
