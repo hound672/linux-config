@@ -11,12 +11,21 @@ For using ```.gitconfig.local``` in git global config add in git global config f
 
 ## zsh
 
-### Custom pluginx
+### Custom plugins
 
 zsh-z
 
 ```bash
 git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
+```
+
+docker-compose
+
+Since MR with fixes: https://github.com/ohmyzsh/ohmyzsh/pull/10638
+hasn't been megred yet
+
+```bash
+cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker-compose
 ```
 
 ## Vim
