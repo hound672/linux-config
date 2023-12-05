@@ -52,3 +52,6 @@ alias kc='kubectl'
 # aliases for golang
 alias go_env='f() {export GOPATH="$@";export PATH=$PATH:$GOPATH/bin;}; f'
 
+# lazy{git|docker}
+alias lazg='lazygit'
+alias lazd='lazydocker'
