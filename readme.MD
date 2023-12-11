@@ -71,7 +71,6 @@ ln -sf $PWD/vim/.vimrc ~
 ln -sf $PWD/tmux/.tmux.conf ~
 ln -sf $PWD/tmux/.tmux.conf.local ~
 
-
 # zsh
 ln -sf $PWD/zsh/.zshrc ~
 ln -sf $PWD/zsh/.zshrc.local ~
@@ -81,5 +80,9 @@ ln -sf $PWD/gnupg/gpg-agent.conf ~/.gnupg
 
 # aliases
 ln -sf $PWD/aliases/.aliases ~
+
+# lazy git
+ln -sf $PWD/lazygit/config.yml ~/.config/lazygit
+
 ```
 
