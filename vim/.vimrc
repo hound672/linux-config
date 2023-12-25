@@ -27,11 +27,6 @@ inoremap <C-j> <Esc>:m .+1<CR>==gi
 inoremap <C-k> <Esc>:m .-2<CR>==gi
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
-"tab
-nnoremap <A-Left> :tabprevious<CR>                                                                            
-nnoremap <A-Right> :tabnext<CR>
-nnoremap <A-j> :tabprevious<CR>                                                                            
-nnoremap <A-k> :tabnext<CR>
 
 map <C-t> :NERDTreeToggle<CR>
 " xorg
