@@ -1,6 +1,8 @@
 # Linux config
 
-## git
+## Content
+
+### git
 
 For using ```.gitconfig.local``` in git global config add in git global config file:
 
@@ -9,9 +11,9 @@ For using ```.gitconfig.local``` in git global config add in git global config f
     path = ~/.gitconfig.local
 ```
 
-## zsh
+### zsh
 
-### Custom plugins
+#### Custom plugins
 
 zsh-z
 
@@ -28,15 +30,15 @@ hasn't been megred yet
 cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker-compose
 ```
 
-## Vim
+### Vim
 
-### Copy colors
+#### Copy colors
 
 ```bash
 cp -r vim/colors/* ~/.vim/colors
 ```
 
-### Used plugins:
+#### Used plugins:
 
 - https://github.com/junegunn/vim-plug
 - https://github.com/sickill/vim-monokai
@@ -45,23 +47,25 @@ cp -r vim/colors/* ~/.vim/colors
 - https://github.com/kien/ctrlp.vim
 - https://github.com/rking/ag.vim
 
-## Tmux
+### Tmux
 
-### Requirements
+#### Requirements
 
 ```xsel``` for copy to system clipboard
 
-### Plugin installer
+#### Plugin installer
 
 https://github.com/tmux-plugins/tpm
 
-### Based config
+#### Based config
 
 https://github.com/gpakosz/.tmux
 
-## idead
+### idea
 
 Some configs, presets and so on for JetBrains editors
+
+# Usage
 
 ## Create symlinks
 
@@ -87,6 +91,10 @@ ln -sf $PWD/aliases/.aliases ~
 
 # lazy git
 ln -sf $PWD/lazygit/config.yml ~/.config/lazygit
+
+# vifm
+ln -sf $PWD/vifm/vifmrc ~/.config/vifm
+cp vifm/colors/* ~/.config/vifm/colors/
 
 ```
 
