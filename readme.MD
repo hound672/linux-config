@@ -59,6 +59,10 @@ https://github.com/tmux-plugins/tpm
 
 https://github.com/gpakosz/.tmux
 
+## idead
+
+Some configs, presets and so on for JetBrains editors
+
 ## Create symlinks
 
 In git repo dir:
