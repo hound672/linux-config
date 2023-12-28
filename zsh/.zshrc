@@ -86,6 +86,7 @@ plugins=(
   kubectl
   poetry
   wd
+  alias-finder
 )
 
 source $ZSH/oh-my-zsh.sh
