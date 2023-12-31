@@ -14,11 +14,6 @@ if [[ -f "$ENV_FILE" ]]; then
   source $ENV_FILE
 fi
 
-zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
-zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
-zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
-zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
-
 unalias -m "fd"
 unalias -m "ff"
 
