@@ -2,6 +2,9 @@
 hash -d ssd_storage=/mnt/ssd_storage
 hash -d storage=/mnt/storage
 
+unalias -m "fd"
+unalias -m "ff"
+
 # link own private aliases
 ALIASES_FILE=~/.aliases
 if [[ -f "$ALIASES_FILE" ]]; then
@@ -13,7 +16,4 @@ ENV_FILE=~/.env
 if [[ -f "$ENV_FILE" ]]; then
   source $ENV_FILE
 fi
-
-unalias -m "fd"
-unalias -m "ff"
 

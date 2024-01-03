@@ -55,3 +55,7 @@ alias go_env='f() {export GOPATH="$@";export PATH=$PATH:$GOPATH/bin;}; f'
 # lazy{git|docker}
 alias lazg='lazygit'
 alias lazd='lazydocker'
+
+# fd
+alias fd='fd -I'
+
