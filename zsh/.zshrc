@@ -89,6 +89,7 @@ plugins=(
   wd
   hound
   tmux
+  aliases
 )
 
 source $ZSH/oh-my-zsh.sh
