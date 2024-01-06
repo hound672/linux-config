@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/vbliznetsov/.oh-my-zsh"
+export ZSH_TMUX_AUTOSTART=true
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -87,6 +88,7 @@ plugins=(
   poetry
   wd
   hound
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -126,12 +128,6 @@ fi
 # Use manjaro zsh prompt
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
-fi
-
-if which tmux 2>&1 >/dev/null; then
-  if [ $TERM != "screen-256color" ] && [  $TERM != "screen" ]; then
-    tmux attach -t hack || tmux new -s hack; exit
-  fi
 fi
 
 export PYENV_ROOT="$HOME/.pyenv"
