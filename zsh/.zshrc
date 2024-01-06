@@ -86,6 +86,7 @@ plugins=(
   kubectl
   poetry
   wd
+  hound
 )
 
 source $ZSH/oh-my-zsh.sh

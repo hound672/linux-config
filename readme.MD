@@ -21,13 +21,21 @@ zsh-z
 git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 ```
 
-docker-compose
+* docker-compose
 
 Since MR with fixes: https://github.com/ohmyzsh/ohmyzsh/pull/10638
 hasn't been megred yet
 
 ```bash
 cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker-compose
+```
+
+* hound
+
+Some mine addons
+
+```bash
+cp -r zsh/plugins/hound ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/hound
 ```
 
 ### Vim
