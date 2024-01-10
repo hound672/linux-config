@@ -27,7 +27,7 @@ Since MR with fixes: https://github.com/ohmyzsh/ohmyzsh/pull/10638
 hasn't been megred yet
 
 ```bash
-cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/docker-compose
+cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 ```
 
 * hound
@@ -35,7 +35,7 @@ cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/dock
 Some mine addons
 
 ```bash
-cp -r zsh/plugins/hound ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/hound
+cp -r zsh/plugins/hound ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 ```
 
 ### Vim

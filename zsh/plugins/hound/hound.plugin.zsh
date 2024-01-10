@@ -13,3 +13,19 @@ function pwd_copy {
 
   echo ${(%):-"%B${file:a}%b copied to clipboard."}
 }
+
+# add config file for kubectl
+function kc_add_config {
+  local config_to_add="${1:-}"
+
+  if [ -z "$config_to_add" ]
+  then
+    echo "Path to config is not specified"
+    return
+  fi
+
+  local default="${KUBECONFIG:-~/.kube/config}"
+  export KUBECONFIG="${default}:${config_to_add}"
+
+  echo ${(%):-"%B${config_to_add}%b added to kubectl."}
+}
