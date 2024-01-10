@@ -24,19 +24,15 @@ git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/pl
 * docker-compose
 
 Since MR with fixes: https://github.com/ohmyzsh/ohmyzsh/pull/10638
-hasn't been megred yet
+hasn't been merged yet. 
 
-```bash
-cp -r zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
-```
+Create symlink command bellow.
 
 * hound
 
-Some mine addons
+Some mine addons.
 
-```bash
-cp -r zsh/plugins/hound ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
-```
+Create symlink command bellow.
 
 ### Vim
 
@@ -82,7 +78,7 @@ In git repo dir:
 
 # vim
 ln -sf $PWD/vim/.vimrc ~
-
+  
 # tmux
 ln -sf $PWD/tmux/.tmux.conf ~
 ln -sf $PWD/tmux/.tmux.conf.local ~
@@ -90,6 +86,11 @@ ln -sf $PWD/tmux/.tmux.conf.local ~
 # zsh
 ln -sf $PWD/zsh/.zshrc ~
 ln -sf $PWD/zsh/.zshrc.local ~
+
+# zsh plugins
+
+ln -sf $PWD/zsh/plugins/docker-compose ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
+ln -sf $PWD/zsh/plugins/hound ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 
 # gnpg
 ln -sf $PWD/gnupg/gpg-agent.conf ~/.gnupg
