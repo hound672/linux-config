@@ -1,7 +1,7 @@
 # Copies the path of given directory or file to the system or X Windows clipboard.
-# Copy current directory if no parameter.
+# Copy current_config directory if no parameter.
 function pwd_copy {
-  # If no argument passed, use current directory
+  # If no argument passed, use current_config directory
   local file="${1:-.}"
 
   # If argument is not an absolute path, prepend $PWD
@@ -18,14 +18,21 @@ function pwd_copy {
 function kc_add_config {
   local config_to_add="${1:-}"
 
-  if [ -z "$config_to_add" ]
+  if [ -z $config_to_add ]
   then
     echo "Path to config is not specified"
     return
   fi
 
-  local default="${KUBECONFIG:-~/.kube/config}"
-  export KUBECONFIG="${default}:${config_to_add}"
+  local current_config="${KUBECONFIG:-~/.kube/config}"
+
+  if [[ $current_config == *${config_to_add}* ]]
+  then
+    echo ${(%):-"%B${config_to_add}%b already in config."}
+    return
+  fi
+
+  export KUBECONFIG="${current_config}:${config_to_add}"
 
   echo ${(%):-"%B${config_to_add}%b added to kubectl."}
 }
