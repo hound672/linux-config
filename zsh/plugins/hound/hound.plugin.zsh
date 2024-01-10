@@ -21,7 +21,7 @@ function kc_add_config {
   if [ -z $config_to_add ]
   then
     echo "Path to config is not specified"
-    return
+    return 1
   fi
 
   local current_config="${KUBECONFIG:-~/.kube/config}"
