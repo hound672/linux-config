@@ -11,6 +11,10 @@ set -sg repeat-time 400
 
 bind R respawn-pane -k \; display 'pane was respawned'
 
+# resurrect plugin
+set -g @resurrect-save 'M-s'
+set -g @resurrect-restore 'M-r'
+
 # -- navigation ----------------------------------------------------------------
 
 # if you're running tmux within iTerm2
