@@ -7,6 +7,10 @@
 # -- general -------------------------------------------------------------------
 set -sg repeat-time 400
 
+# -- binds ---------------------------------------------------------------------
+
+bind R respawn-pane -k \; display 'pane was respawned'
+
 # -- navigation ----------------------------------------------------------------
 
 # if you're running tmux within iTerm2
