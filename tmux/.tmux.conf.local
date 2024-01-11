@@ -9,7 +9,7 @@ set -sg repeat-time 400
 
 # -- binds ---------------------------------------------------------------------
 
-bind R respawn-pane -k \; display 'pane was respawned'
+bind C-r respawn-pane -k \; display 'pane was respawned'
 
 # resurrect plugin
 set -g @resurrect-save 'M-s'
