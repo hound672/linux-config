@@ -95,9 +95,6 @@ ln -sf $PWD/zsh/plugins/hound ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins
 # gnpg
 ln -sf $PWD/gnupg/gpg-agent.conf ~/.gnupg
 
-# aliases
-ln -sf $PWD/aliases/.aliases ~
-
 # lazy git
 ln -sf $PWD/lazygit/config.yml ~/.config/lazygit
 

@@ -56,5 +56,3 @@ alias lazd='lazydocker'
 
 # fd
 alias fd='fd -I'
-
-
