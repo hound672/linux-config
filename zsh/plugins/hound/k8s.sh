@@ -1,5 +1,7 @@
 # ===== K8S commands =====
 
+alias kc='kubectl'
+
 # add config file for kubectl
 function kc_add_config {
   local config_to_add="${1:-}"

@@ -1,25 +1,3 @@
-# env aliases
-alias env_accept='if [ -f .env ]; then export $(xargs <.env); else echo ".env file not found!"; fi'
-
-# aliases for git commands
-alias gfa='git fetch --all --prune --jobs=10 --prune-tags'
-alias gl='f(){ git log --show-signature -n"$@";  unset -f f; }; f'
-alias gpl='git pull --rebase'
-alias gs='git status'
-alias gphf='f(){ git push origin +"$@";  unset -f f; }; f'
-alias gba='g branch -a -vv'
-alias gdiff='g diff-tree -r'
-alias gdiffs='g diff-tree -r --stat'
-alias glbtwn='f(){ glod --no-merges "$@";  unset -f f; }; f'
-# rewrite alias (modify date format)
-alias glod='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date=format-local:"%d-%m-%Y %H:%M:%S"'
-
-# # aliases for docker
-alias dsa="docker ps -a -q | xargs docker stop"
-alias dra="docker ps -a -q | xargs docker rm"
-alias docker_rmi_empty='docker images -f "dangling=true" -q | xargs docker rmi'
-alias dpsstopped='docker ps --filter "status=exited"'
-
 # copy stdout to buffer
 alias buf_copy='xclip -i -selection clipboard'
 # copy to clipboard
@@ -43,12 +21,6 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias ag="ag --hidden"
-
-# aliases for K8S
-alias kc='kubectl'
-
-# aliases for golang
-alias go_env='f() {export GOPATH="$@";export PATH=$PATH:$GOPATH/bin;}; f'
 
 # lazy{git|docker}
 alias lazg='lazygit'
