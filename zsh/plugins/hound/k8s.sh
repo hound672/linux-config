@@ -30,3 +30,13 @@ function kc_add_config {
 
   echo ${(%):-"%B${config_to_add}%b added to kubectl."}
 }
+
+# read current kubectl configs
+function kc_get_configs() {
+  kube_config=${KUBECONFIG}
+  configs=(${(s/:/)kube_config})
+  for config in ${configs}
+  do
+    echo ${config}
+  done
+}
