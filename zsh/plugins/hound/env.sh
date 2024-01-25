@@ -11,3 +11,12 @@ function env_accept {
 
   export $(xargs <.env)
 }
+
+# show all env with fzf and copy value to clipboard by enter
+function env_read {
+  local env_value
+  env | fzf --bind "enter:become(echo {})" | awk -F '=' '{print $2}' | read env_value
+
+  echo ${(%):-"%B${env_value}%b copied to clipboard."}
+  echo ${env_value} | clipcopy
+}
