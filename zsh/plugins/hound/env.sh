@@ -14,9 +14,11 @@ function env_accept {
 
 # show all env with fzf and copy value to clipboard by enter
 function env_read {
-  local env_value
-  env | fzf --bind "enter:become(echo {})" | awk -F '=' '{print $2}' | read env_value
+  local env_string
+  env | fzf --bind "enter:become(echo {})" | read env_string
 
-  echo ${(%):-"%B${env_value}%b copied to clipboard."}
-  echo ${env_value} | clipcopy
+  local env_result=(${(s/=/)env_string})
+
+  echo ${(%):-"Value of %B${env_result[1]}%b env var %B${env_result[2]}%b is copied to clipboard."}
+  echo -n ${env_result[2]} | clipcopy
 }
