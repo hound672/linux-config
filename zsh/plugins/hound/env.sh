@@ -10,7 +10,6 @@ function env_accept {
     return 1
   fi
 
-#  export $(xargs <.env)
   export $(xargs <$env_file)
   echo ${(%):-"Envs from %B${env_file:a}%b are applied"}
 }
