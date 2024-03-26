@@ -2,14 +2,17 @@
 
 # read env from .env vile
 function env_accept {
-  local env_file=".env"
+  local env_file="${1:-.env}"
+
   if [ ! -f $env_file ]
   then
     echo ${(%):-"%B${env_file}%b file not found!"}
     return 1
   fi
 
-  export $(xargs <.env)
+#  export $(xargs <.env)
+  export $(xargs <$env_file)
+  echo ${(%):-"Envs from %B${env_file:a}%b are applied"}
 }
 
 # show all env with fzf and copy value to clipboard by enter

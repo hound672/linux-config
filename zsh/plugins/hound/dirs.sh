@@ -15,7 +15,6 @@ function rmcd() {
     fi
     echo "???"
 
-
     cd ..
     rm -rf ${current}
     echo ${(%):-"%B${current:a}%b deleted."}
