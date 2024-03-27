@@ -33,3 +33,7 @@ function gcmpo {
 
   glod $current_branch $remote
 }
+
+# copy current branch name to clipboard
+
+alias gcbn="git rev-parse --abbrev-ref HEAD | tr -d '\n' | clipcopy"
