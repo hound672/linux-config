@@ -13,7 +13,6 @@ function rmcd() {
     if ! read -q "choice?Remove "${current}"?"; then
       return
     fi
-    echo "???"
 
     cd ..
     rm -rf ${current}
