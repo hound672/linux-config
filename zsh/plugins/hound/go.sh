@@ -14,14 +14,14 @@ function go_bin_path {
   fi
 
   new_bin_dir=$PWD/$new_bin_dir
-  __set_go_env GOBIN new_bin_dir
+  __set_go_env GOBIN $new_bin_dir
 }
 
 function __set_go_env {
     local name=${1}
     local value=${2}
 
-    echo $name
-    echo $value
+echo $value
+    export ${name}=${value}
     echo ${(%):-"%B${value:a}%b new %B${name}%b."}
 }
