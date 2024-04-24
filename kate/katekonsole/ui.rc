@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE gui SYSTEM 'kpartgui.dtd'>
+<gui version="6" translationDomain="katekonsoleplugin" library="katekonsoleplugin" name="katekonsole">
+ <MenuBar>
+  <Menu name="tools">
+   <text>&amp;Tools</text>
+   <Action group="tools_konsole" name="katekonsole_tools_toggle_visibility"/>
+   <Action group="tools_konsole" name="katekonsole_tools_toggle_focus"/>
+   <Action group="tools_konsole" name="katekonsole_tools_pipe_to_terminal"/>
+   <Action group="tools_konsole" name="katekonsole_tools_sync"/>
+   <Action group="tools_konsole" name="katekonsole_tools_run"/>
+  </Menu>
+ </MenuBar>
+ <ActionProperties scheme="Default"/>
+</gui>
+<!-- kate: space-indent on; indent-width 4; replace-tabs on; -->

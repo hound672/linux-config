@@ -102,5 +102,12 @@ ln -sf $PWD/lazygit/config.yml ~/.config/lazygit
 ln -sf $PWD/vifm/vifmrc ~/.config/vifm
 cp vifm/colors/* ~/.config/vifm/colors/
 
+# kate
+ln -sf $PWD/kate/externaltools ~/.local/share/kxmlgui5/externaltools
+ln -sf $PWD/kate/kate ~/.local/share/kxmlgui5/kate
+ln -sf $PWD/kate/katekonsole ~/.local/share/kxmlgui5/katekonsole
+ln -sf $PWD/kate/katepart ~/.local/share/kxmlgui5/katepart
+
+
 ```
 

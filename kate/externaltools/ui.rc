@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE gui SYSTEM 'kpartgui.dtd'>
+<gui version="6" translationDomain="kateexternaltoolsplugin" name="externaltools">
+ <MenuBar>
+  <Menu name="tools">
+   <text>&amp;Tools</text>
+   <Action group="tools_operations3" name="tools_external"/>
+  </Menu>
+ </MenuBar>
+ <ToolBar noMerge="1" name="mainToolBar">
+  <text>Main Toolbar</text>
+ </ToolBar>
+ <ActionProperties>
+  <Action shortcut="Ctrl+Shift+J" name="externaltool_JSONFormatFullFile"/>
+ </ActionProperties>
+</gui>
