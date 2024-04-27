@@ -2,7 +2,7 @@
 
 # create dir and enter to it
 function mdcd() {
-  mkdir "$1"
+  mkdir -p "$1"
   cd "$1"
 }
 
