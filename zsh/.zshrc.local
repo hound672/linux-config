@@ -17,3 +17,5 @@ if [[ -f "$ENV_FILE" ]]; then
   source $ENV_FILE
 fi
 
+source <(easyp completion zsh)
+
