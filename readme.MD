@@ -117,6 +117,8 @@ ln -sf $PWD/kate/kate ~/.local/share/kxmlgui5/kate
 ln -sf $PWD/kate/katekonsole ~/.local/share/kxmlgui5/katekonsole
 ln -sf $PWD/kate/katepart ~/.local/share/kxmlgui5/katepart
 
+# konsole
+ln -sf $PWD/konsole/Hound.profile ~/.local/share/konsole
 
 ```
 
