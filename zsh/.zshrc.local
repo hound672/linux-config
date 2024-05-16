@@ -19,3 +19,5 @@ fi
 
 source <(easyp completion zsh)
 
+bindkey \^U backward-kill-line
+bindkey \^H kill-whole-line

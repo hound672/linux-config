@@ -86,6 +86,9 @@ ln -sf $PWD/tmux/.tmux.conf.local ~
 # zsh
 ln -sf $PWD/zsh/.zshrc ~
 ln -sf $PWD/zsh/.zshrc.local ~
+ln -sf $PWD/zsh/.p10k.zsh ~
+ln -sf $PWD/zsh/.zsh-config ~
+ln -sf $PWD/zsh/.zsh-autosuggestions.zsh ~
 
 # zsh plugins
 
