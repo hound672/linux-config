@@ -13,6 +13,12 @@ For using ```.gitconfig.local``` in git global config add in git global config f
 
 ### zsh
 
+#### Custom theme
+
+```bash
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+```
+
 #### Custom plugins
 
 zsh-z
