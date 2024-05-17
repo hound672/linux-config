@@ -71,7 +71,7 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 ### Fix slowness of pastes
 
 # Customize settings, theme
-[[ ! -f ${HOME_DIR}/.p10k.zsh ]] || source ~/.p10k.zsh
-[[ ! -f ${HOME_DIR}/.zsh-config ]] || source ~/.zsh-config
-[[ ! -f ${HOME_DIR}/.zsh-autosuggestions.zsh ]] || source ~/.zsh-autosuggestions.zsh
-[[ ! -f ${HOME_DIR}/.zshrc.local ]] || source ~/.zshrc.local
+[[ ! -f ${HOME_DIR}/.p10k.zsh ]] || source ${HOME_DIR}/.p10k.zsh
+[[ ! -f ${HOME_DIR}/.zsh-config ]] || source ${HOME_DIR}/.zsh-config
+[[ ! -f ${HOME_DIR}/.zsh-autosuggestions.zsh ]] || source ${HOME_DIR}/.zsh-autosuggestions.zsh
+[[ ! -f ${HOME_DIR}/.zshrc.local ]] || source ${HOME_DIR}/.zshrc.local
