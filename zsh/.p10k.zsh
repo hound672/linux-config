@@ -44,7 +44,6 @@
   # automatically hidden when the input line reaches it. Right prompt above the
   # last prompt line gets hidden if it would overlap with left prompt.
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-    command_execution_time  # duration of the last command
     background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
     asdf                    # asdf version manager (https://github.com/asdf-vm/asdf)
@@ -106,6 +105,7 @@
     time                    # current time
     # =========================[ Line #2 ]=========================
     newline
+    command_execution_time  # duration of the last command
     status                  # exit code of the last command
     # ip                    # ip address and bandwidth usage for a specified network interface
     # public_ip             # public IP address
