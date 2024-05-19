@@ -2,6 +2,14 @@
 
 alias go_env='f() {export GOPATH="$@";export PATH=$PATH:$GOPATH/bin;}; f'
 
+func go_rename_project() {
+  local source_package_name=${1}
+
+  echo ${source_package_name}
+  fd go.mod|xargs -IX sed -i 's/${source_package_name}/hound672\/clay/g' X
+#  fd go.mod|xargs -IX sed -i 's/utrack\/clay/hound672\/clay/g' X
+}
+
 # Set GOBIN path as passed dir
 function go_bin_path {
   # If no argument passed, use current_config directory
