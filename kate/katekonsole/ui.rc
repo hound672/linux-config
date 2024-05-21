@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE gui SYSTEM 'kpartgui.dtd'>
-<gui version="6" translationDomain="katekonsoleplugin" library="katekonsoleplugin" name="katekonsole">
+<gui library="katekonsoleplugin" name="katekonsole" translationDomain="katekonsoleplugin" version="6">
  <MenuBar>
   <Menu name="tools">
    <text>&amp;Tools</text>

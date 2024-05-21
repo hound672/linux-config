@@ -1,7 +1,7 @@
 <!DOCTYPE gui SYSTEM 'kpartgui.dtd'>
-<gui version="101" translationDomain="ktexteditor5" name="KatePartView">
+<gui name="KatePartView" translationDomain="ktexteditor6" version="105">
  <MenuBar>
-  <Menu noMerge="1" name="file">
+  <Menu name="file" noMerge="1">
    <text>&amp;File</text>
    <Action group="save_merge" name="file_save"/>
    <Action group="save_merge" name="file_save_as"/>
@@ -9,13 +9,13 @@
    <Action group="save_merge" name="file_save_copy_as"/>
    <Action group="revert_merge" name="file_reload"/>
    <Menu group="print_merge" name="file_export">
-    <text>Export/Print</text>
+    <text>Print/Export</text>
     <Action group="print_merge" name="file_print"/>
     <Action group="print_merge" name="file_print_preview"/>
     <Action group="print_merge" name="file_export_html"/>
    </Menu>
   </Menu>
-  <Menu noMerge="1" name="edit">
+  <Menu name="edit" noMerge="1">
    <text>&amp;Edit</text>
    <Action group="edit_undo_merge" name="edit_undo"/>
    <Action group="edit_undo_merge" name="edit_redo"/>
@@ -43,7 +43,7 @@
    <Action group="edit_find_merge" name="edit_replace"/>
    <Separator group="edit_find_merge"/>
   </Menu>
-  <Menu noMerge="1" name="selection">
+  <Menu name="selection" noMerge="1">
    <text>Selection</text>
    <Action group="edit_selection" name="edit_select_all"/>
    <Action group="edit_selection" name="edit_deselect"/>
@@ -69,7 +69,7 @@
    <Action group="edit_selection" name="edit_find_multicursor_next_occurrence"/>
    <Action group="edit_selection" name="edit_find_multicursor_all_occurrences"/>
   </Menu>
-  <Menu noMerge="1" name="view">
+  <Menu name="view" noMerge="1">
    <text>&amp;View</text>
    <Action group="view_operations" name="view_inc_font_sizes"/>
    <Action group="view_operations" name="view_dec_font_sizes"/>
@@ -105,9 +105,10 @@
    <Separator group="view_operations"/>
    <Action group="view_operations" name="view_auto_reload"/>
    <Action group="view_operations" name="view_non_printable_spaces"/>
+   <Action group="edit_select_merge" name="force_rtl_direction"/>
    <Action group="view_operations" name="view_word_count"/>
   </Menu>
-  <Menu noMerge="1" name="go">
+  <Menu name="go" noMerge="1">
    <text>&amp;Go</text>
    <Action group="edit_goto" name="go_goto_line"/>
    <Separator group="edit_goto"/>
@@ -122,7 +123,7 @@
    <Separator group="edit_goto2"/>
    <Action group="edit_goto2" name="bookmarks"/>
   </Menu>
-  <Menu noMerge="1" name="tools">
+  <Menu name="tools" noMerge="1">
    <text>&amp;Tools</text>
    <Action group="tools_operations" name="tools_mode"/>
    <Action group="tools_operations" name="tools_highlighting"/>
@@ -153,21 +154,29 @@
     <Action group="tools_spelling" name="tools_change_dictionary"/>
     <Action group="tools_spelling" name="tools_clear_dictionary_ranges"/>
    </Menu>
+   <Separator group="tools_operations2"/>
+   <Menu group="tools_speech" name="speech">
+    <text>Text to Speech</text>
+    <Action group="tools_speech" name="tools_speech_say"/>
+    <Action group="tools_speech" name="tools_speech_stop"/>
+    <Action group="tools_speech" name="tools_speech_pause"/>
+    <Action group="tools_speech" name="tools_speech_resume"/>
+   </Menu>
   </Menu>
-  <Menu noMerge="1" name="settings">
+  <Menu name="settings" noMerge="1">
    <text>&amp;Settings</text>
    <Action group="color" name="view_schemas"/>
    <Action group="configure_merge" name="set_confdlg"/>
   </Menu>
  </MenuBar>
- <ToolBar noMerge="1" name="mainToolBar">
+ <ToolBar name="mainToolBar" noMerge="1">
   <text>Main Toolbar</text>
   <Action group="file_operations" name="file_save"/>
   <Action group="file_operations" name="file_save_as"/>
   <Action group="edit_operations" name="edit_undo"/>
   <Action group="edit_operations" name="edit_redo"/>
  </ToolBar>
- <Menu noMerge="0" name="ktexteditor_popup">
+ <Menu name="ktexteditor_popup" noMerge="0">
   <Action group="popup_operations" name="spelling_suggestions"/>
   <Separator group="popup_operations"/>
   <Action group="popup_operations" name="edit_cut"/>
@@ -175,6 +184,7 @@
   <Action group="popup_operations" name="edit_paste"/>
   <Action group="popup_operations" name="edit_paste_selection"/>
   <Action group="popup_operations" name="edit_swap_with_clipboard"/>
+  <Action group="popup_operations" name="text_screenshot_selection"/>
   <Separator group="popup_operations"/>
   <Action group="popup_operations" name="tools_scripts_Editing"/>
   <Separator group="popup_operations"/>
@@ -184,7 +194,7 @@
   <Separator group="popup_operations"/>
  </Menu>
  <ActionProperties>
-  <Action shortcut="Ctrl+=" name="folding_toggle_current"/>
-  <Action shortcut="Ctrl++; " name="view_inc_font_sizes"/>
+  <Action name="folding_toggle_current" shortcut="Ctrl+="/>
+  <Action name="view_inc_font_sizes" shortcut="Ctrl++; "/>
  </ActionProperties>
 </gui>
