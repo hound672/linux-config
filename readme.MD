@@ -116,6 +116,7 @@ ln -sf $PWD/kate/externaltools ~/.local/share/kxmlgui5/externaltools
 ln -sf $PWD/kate/kate ~/.local/share/kxmlgui5/kate
 ln -sf $PWD/kate/katekonsole ~/.local/share/kxmlgui5/katekonsole
 ln -sf $PWD/kate/katepart ~/.local/share/kxmlgui5/katepart
+ln -sf $PWD/kate/katefiletree/ui.rc ~/.local/share/kxmlgui5/katefiletree
 
 # konsole
 ln -sf $PWD/konsole/Hound.profile ~/.local/share/konsole

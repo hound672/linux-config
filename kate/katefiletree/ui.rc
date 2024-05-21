@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE gui SYSTEM 'kpartgui.dtd'>
+<gui library="katefiletreeplugin" name="katefiletreeplugin" translationDomain="katefiletree" version="10">
+ <!-- merge in view -->
+ <MenuBar>
+  <Menu name="go">
+   <text>&amp;Go</text>
+   <Action group="switch_document" name="filetree_prev_document"/>
+   <Action group="switch_document" name="filetree_next_document"/>
+   <Action group="switch_document" name="filetree_show_active_document"/>
+  </Menu>
+ </MenuBar>
+ <ActionProperties scheme="Default">
+  <Action name="filetree_next_document" shortcut="Alt+Right"/>
+  <Action name="filetree_prev_document" shortcut="Alt+Left"/>
+ </ActionProperties>
+</gui>
+<!-- kate: space-indent on; indent-width 4; replace-tabs on; -->
