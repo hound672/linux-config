@@ -31,5 +31,5 @@ alias fd='fd -I'
 
 # find
 alias fn='find .'
-alias fnf='find . -type f -name'
-alias fnd='find . -type d -name'
+alias fnf='find . -type f'
+alias fnd='find . -type d'
