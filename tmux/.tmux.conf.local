@@ -213,7 +213,7 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{username}
 #     - #{username_ssh}
 tmux_conf_theme_status_left=' ❐ #S'
-tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} | #{uptime_d} days: #{uptime_h}:#{uptime_m} , loadavg: #{loadavg} , %d.%m.%Y %R | #{username}#{root} | #{hostname}'
+tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} | uptime: #{uptime_d} day(s) #{uptime_h}:#{uptime_m} , loadavg: #{loadavg} , %d.%m.%Y %R | #{username}#{root} | #{hostname}'
 
 # status left style
 tmux_conf_theme_status_left_fg='#000000,#e4e4e4,#e4e4e4'  # black, white , white
@@ -221,8 +221,8 @@ tmux_conf_theme_status_left_bg='#8a8a8a,#ff00af,#00afff'  # yellow, pink, white 
 tmux_conf_theme_status_left_attr='bold,none,none'
 
 # status right style
-tmux_conf_theme_status_right_fg='#8a8a8a,#8a8a8a,#e000000,#000000' # light gray, light gray, black, black
-tmux_conf_theme_status_right_bg='#080808,#080808,#00a600,#8a8a8a' # dark gray, dark gray, green, white
+tmux_conf_theme_status_right_fg='#8a8a8a,#ffffff,#e000000,#000000' # light gray, white, black, black
+tmux_conf_theme_status_right_bg='#080808,#080808,#00a600,#8a8a8a' # black, black, green, light gray
 tmux_conf_theme_status_right_attr='none,none,none,bold'
 
 # pairing indicator
