@@ -105,7 +105,7 @@ tmux_conf_theme_pane_active_indicator='#00a600'         # light blue
 
 # status line style
 tmux_conf_theme_message_fg='#000000'                    # black
-tmux_conf_theme_message_bg='#8a8a8a'                    # yellow
+tmux_conf_theme_message_bg='#8a8a8a'                    # light gray
 tmux_conf_theme_message_attr='bold'
 
 # status line command style (<prefix> : Escape)
@@ -212,7 +212,7 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{uptime_s}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_status_left=' ❐ #S'
+tmux_conf_theme_status_left='[ #S ]'
 tmux_conf_theme_status_right='#{prefix}#{pairing}#{synchronized} | uptime: #{uptime_d} day(s) #{uptime_h}:#{uptime_m} , loadavg: #{loadavg} , %d.%m.%Y %R | #{username}#{root} | #{hostname}'
 
 # status left style
