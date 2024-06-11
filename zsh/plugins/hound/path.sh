@@ -26,10 +26,16 @@ function pwd_copy_rel {
   [[ $file = /* ]] || file="$PWD/$file"
 
   local result=${file#"$PWD"}
+  if [[ $result = "/." ]]
+  then
+    result="."
+  else
+    result="${result/\//./}"
+  fi
 
   # Copy the absolute path without resolving symlinks
   # If clipcopy fails, exit the function with an error
-  print -n "${result:a}" | clipcopy || return 1
+  print -n "${result}" | clipcopy || return 1
 
-  echo ${(%):-"%B${result:a}%b copied to clipboard."}
+  echo ${(%):-"%B${result}%b copied to clipboard."}
 }
