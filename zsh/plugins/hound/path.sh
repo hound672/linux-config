@@ -2,7 +2,7 @@
 
 # Copies obsolete the path of given directory or file to the system or X Windows clipboard.
 # Copy current_config directory if no parameter.
-function pwd_copy {
+function pwd_copy_abs {
   # If no argument passed, use current_config directory
   local file="${1:-.}"
 
