@@ -19,6 +19,12 @@ function env_read {
   local env_string
   env | fzf --bind "enter:become(echo {})" | read env_string
 
+  if [ -z $env_string ]
+  then
+    echo "canceled"
+    return 1
+  fi
+
   local env_result=(${(s/=/)env_string})
 
   echo ${(%):-"Value of %B${env_result[1]}%b env var %B${env_result[2]}%b is copied to clipboard."}
