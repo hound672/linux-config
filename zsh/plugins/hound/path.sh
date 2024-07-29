@@ -9,6 +9,12 @@ function pwd_copy_abs {
   # If argument is not an absolute path, prepend $PWD
   [[ $file = /* ]] || file="$PWD/$file"
 
+  if [ ! -f $file ] && [ ! -d $file ]
+  then
+    echo ${(%):-"%B${file}%b not found!"}
+    return 1
+  fi
+
   # Copy the absolute path without resolving symlinks
   # If clipcopy fails, exit the function with an error
   print -n "${file:a}" | clipcopy || return 1
@@ -24,6 +30,12 @@ function pwd_copy_rel {
 
   # If argument is not an absolute path, prepend $PWD
   [[ $file = /* ]] || file="$PWD/$file"
+
+  if [ ! -f $file ] && [ ! -d $file ]
+  then
+    echo ${(%):-"%B${file}%b not found!"}
+    return 1
+  fi
 
   local result=${file#"$PWD"}
   if [[ $result = "/." ]]
