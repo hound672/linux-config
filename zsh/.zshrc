@@ -30,6 +30,7 @@ plugins=(
   hound
   tmux
   aliases
+  zsh-ssh
 )
 
 source $ZSH/oh-my-zsh.sh

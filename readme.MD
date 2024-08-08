@@ -21,10 +21,16 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 #### Custom plugins
 
-zsh-z
+* zsh-z
 
 ```bash
 git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
+```
+
+* zsh-ssh
+
+```bash
+git clone https://github.com/sunlei/zsh-ssh ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-ssh
 ```
 
 * docker-compose
