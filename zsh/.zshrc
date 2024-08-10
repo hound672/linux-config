@@ -19,6 +19,7 @@ plugins=(
   history
   history-substring-search 
   zsh-autosuggestions
+  zsh-syntax-highlighting
 
   docker
   docker-compose
