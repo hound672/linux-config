@@ -23,14 +23,16 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 * zsh-z
 
-```bash
-git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
-```
-
 * zsh-ssh
 
+* zsh-autosuggestions
+
+Installation
+
 ```bash
+git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 git clone https://github.com/sunlei/zsh-ssh ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-ssh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 * docker-compose
@@ -100,7 +102,6 @@ ln -sf $PWD/zsh/.zshrc ~
 ln -sf $PWD/zsh/.zshrc.local ~
 ln -sf $PWD/zsh/.p10k.zsh ~
 ln -sf $PWD/zsh/.zsh-config ~
-ln -sf $PWD/zsh/.zsh-autosuggestions.zsh ~
 
 # zsh plugins
 

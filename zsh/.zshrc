@@ -13,23 +13,27 @@ export ZSH_TMUX_AUTOSTART=true
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
-  git 
+  git
   gitfast
-  history 
+
+  history
   history-substring-search 
-  docker 
-  docker-compose 
-  sudo 
-  fzf 
-  common-aliases 
-  zsh-z 
+  zsh-autosuggestions
+
+  docker
+  docker-compose
   minikube
+
+  sudo
+  fzf
+  common-aliases
   kubectl
   poetry
   wd
   hound
   tmux
   aliases
+  zsh-z
   zsh-ssh
 )
 
@@ -74,5 +78,4 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 # Customize settings, theme
 [[ ! -f ${HOME_DIR}/.p10k.zsh ]] || source ${HOME_DIR}/.p10k.zsh
 [[ ! -f ${HOME_DIR}/.zsh-config ]] || source ${HOME_DIR}/.zsh-config
-[[ ! -f ${HOME_DIR}/.zsh-autosuggestions.zsh ]] || source ${HOME_DIR}/.zsh-autosuggestions.zsh
 [[ ! -f ${HOME_DIR}/.zshrc.local ]] || source ${HOME_DIR}/.zshrc.local
