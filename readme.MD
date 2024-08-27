@@ -131,9 +131,3 @@ ln -sf $PWD/konsole/Hound.profile ~/.local/share/konsole
 
 ```
 
-## Install deps:
-
-Rust version manager
-```bash
-curl -L https://raw.github.com/sdepold/rsvm/master/install.sh | bash
-```
