@@ -21,3 +21,6 @@ source <(easyp completion zsh)
 
 bindkey \^U backward-kill-line
 bindkey \^H kill-whole-line
+
+# rsvm rust version manager
+source ~/.rsvm/rsvm.sh
