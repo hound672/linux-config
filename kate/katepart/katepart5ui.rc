@@ -1,5 +1,5 @@
 <!DOCTYPE gui SYSTEM 'kpartgui.dtd'>
-<gui name="KatePartView" translationDomain="ktexteditor6" version="106">
+<gui name="KatePartView" translationDomain="ktexteditor6" version="107">
  <MenuBar>
   <Menu name="file" noMerge="1">
    <text>&amp;File</text>
@@ -60,6 +60,8 @@
    </Menu>
    <Separator group="edit_selection"/>
    <Action group="edit_selection" name="tools_cleanIndent"/>
+   <Action group="edit_selection" name="tools_convertTabsSpaces"/>
+   <Action group="edit_selection" name="tools_convertSpacesTabs"/>
    <Action group="edit_selection" name="tools_formatIndent"/>
    <Action group="edit_selection" name="tools_alignOn"/>
    <Action group="edit_selection" name="tools_apply_wordwrap"/>
