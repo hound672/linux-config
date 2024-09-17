@@ -21,3 +21,5 @@ source <(easyp completion zsh)
 
 bindkey \^U backward-kill-line
 bindkey \^H kill-whole-line
+
+export XDG_CONFIG_HOME="$HOME/.config"
