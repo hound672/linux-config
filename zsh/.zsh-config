@@ -281,7 +281,14 @@ function mzc_termsupport_cwd {
 # will be called the output may be swallowed by the script or function.
 add-zsh-hook precmd mzc_termsupport_cwd
 
+if whence dircolors >/dev/null; then
+  eval "$(dircolors -b)"
+  zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+  alias ls='ls --color'
+else
+  export CLICOLOR=1
+  zstyle ':completion:*:default' list-colors ''
+fi
 # File and Dir colors for ls and other outputs
 export LS_OPTIONS='--color=auto'
-eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
