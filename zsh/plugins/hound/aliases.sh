@@ -34,3 +34,6 @@ alias fd='fd -I'
 alias fn='find .'
 alias fnf='find . -type f'
 alias fnd='find . -type d'
+
+# go-task
+alias task='go-task'
