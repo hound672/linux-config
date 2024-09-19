@@ -36,4 +36,6 @@ alias fnf='find . -type f'
 alias fnd='find . -type d'
 
 # go-task
-alias task='go-task'
+if type "go-task" > /dev/null; then
+  alias task='go-task'
+fi
