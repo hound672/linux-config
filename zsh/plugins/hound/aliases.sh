@@ -39,3 +39,7 @@ alias fnd='find . -type d'
 if type "go-task" > /dev/null; then
   alias task='go-task'
 fi
+
+# generate uuid and copy to clipboard
+alias uuid_gen='echo -n $(uuidgen) |clipcopy'
+
