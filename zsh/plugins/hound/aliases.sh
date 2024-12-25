@@ -41,5 +41,8 @@ if type "go-task" > /dev/null; then
 fi
 
 # generate uuid and copy to clipboard
-alias uuid_gen='echo -n $(uuidgen) |clipcopy'
-
+func uuid_gen() {
+  local uuid=$(uuidgen)
+  echo -n "$uuid"  | clipcopy
+  echo "uuid: "${(%):-"%B${uuid}%b copied to clipboard."}
+}
