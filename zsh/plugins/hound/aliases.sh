@@ -46,3 +46,13 @@ func uuid_gen() {
   echo -n "$uuid"  | clipcopy
   echo "uuid: "${(%):-"%B${uuid}%b copied to clipboard."}
 }
+
+# alias for open file explorer
+# open for MacOS, Dolphin for KDE
+if type "open" > /dev/null; then
+  # do nothing
+elif type "dolphin" > /dev/null; then
+  alias open="dolphin"
+fi
+
+
