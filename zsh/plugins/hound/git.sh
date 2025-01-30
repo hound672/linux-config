@@ -12,6 +12,12 @@ alias glbtwn='f(){ glod --no-merges "$@";  unset -f f; }; f'
 # rewrite alias (modify date format)
 alias glod='git log --graph --pretty="%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset" --date=format-local:"%d-%m-%Y %H:%M:%S"'
 
+function gcmp {
+  local current_branch=$(current_branch)
+
+  glod $current_branch $@
+}
+
 function gcmpd {
   local current_branch=$(current_branch)
   local develop_branch=$(git_develop_branch)
