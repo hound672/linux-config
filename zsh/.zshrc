@@ -80,3 +80,4 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 [[ ! -f ${HOME_DIR}/.p10k.zsh ]] || source ${HOME_DIR}/.p10k.zsh
 [[ ! -f ${HOME_DIR}/.zsh-config ]] || source ${HOME_DIR}/.zsh-config
 [[ ! -f ${HOME_DIR}/.zshrc.local ]] || source ${HOME_DIR}/.zshrc.local
+[[ ! -f ${HOME_DIR}/.zshrc.private ]] || source ${HOME_DIR}/.zshrc.private
