@@ -45,5 +45,5 @@ function gcmpo {
 alias gcbn="git rev-parse --abbrev-ref HEAD | tr -d '\n' | clipcopy"
 
 # dummy commit wuth DUMMY commit message
-alias gdc='gcmsg "DUMMY COMMIT"'
+alias gdc='gav . && gcmsg "DUMMY COMMIT"'
 
