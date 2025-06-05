@@ -47,3 +47,5 @@ alias gcbn="git rev-parse --abbrev-ref HEAD | tr -d '\n' | clipcopy"
 # dummy commit wuth DUMMY commit message
 alias gdc='gav . && gcmsg "DUMMY COMMIT"'
 
+# show only the first line from git log
+alias glodh="glod |head -n 1"
