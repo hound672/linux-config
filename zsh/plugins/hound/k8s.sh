@@ -31,6 +31,26 @@ function kc_add_config {
   echo ${(%):-"%B${config_to_add}%b added to kubectl."}
 }
 
+function kc_set_config {
+  local config_to_add="${1:-}"
+
+  if [ -z $config_to_add ]
+  then
+    echo "Path to config is not specified"
+    return 1
+  fi
+
+  if [ ! -f $config_to_add ]
+  then
+      echo "File "${(%):-"%B${config_to_add}%b does not exist."}
+      return 1
+  fi
+
+  export KUBECONFIG="${config_to_add}"
+
+  echo ${(%):-"%B${config_to_add}%b added to kubectl."}
+}
+
 # read current kubectl configs
 function kc_get_configs() {
   kube_config=${KUBECONFIG}
