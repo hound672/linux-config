@@ -17,7 +17,9 @@ if [[ -f "$ENV_FILE" ]]; then
   source $ENV_FILE
 fi
 
-source <(easyp completion zsh)
+if command -v easyp &> /dev/null; then
+  source <(easyp completion zsh)
+fi
 
 bindkey \^U backward-kill-line
 bindkey \^H kill-whole-line

@@ -34,8 +34,8 @@ plugins=(
   hound
   tmux
   aliases
-  zsh-z
-  zsh-ssh
+  z
+  ssh
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -81,3 +81,5 @@ zstyle :bracketed-paste-magic paste-finish pastefinish
 [[ ! -f ${HOME_DIR}/.zsh-config ]] || source ${HOME_DIR}/.zsh-config
 [[ ! -f ${HOME_DIR}/.zshrc.local ]] || source ${HOME_DIR}/.zshrc.local
 [[ ! -f ${HOME_DIR}/.zshrc.private ]] || source ${HOME_DIR}/.zshrc.private
+
+[[ -s "/Users/vbliznetsov/.gvm/scripts/gvm" ]] && source "/Users/vbliznetsov/.gvm/scripts/gvm"
