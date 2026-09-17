@@ -52,6 +52,6 @@ alias glodh="glod |head -n 1"
 
 # copy to clipboard latest commit'd id
 function glc() {
-  g show HEAD|grep commit | awk '{print $2}'|clipcopy
+  g show HEAD|grep commit | awk '{print $2}' | tr -d '\n' | clipcopy
 }
 
